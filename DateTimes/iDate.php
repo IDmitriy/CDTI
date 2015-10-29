@@ -1,7 +1,7 @@
 <?php
 /**
- * Фреймворк. Даты и Время. Дата.
- * @copyright (c) 2013, Dmitriy Ivan
+ * Common Data Type Interface. Даты и Время. Дата.
+ * @copyright (c) 2015 Dmitriy Ivan
  */
 namespace CDTI\DateTimes;
 

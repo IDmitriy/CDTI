@@ -1,6 +1,10 @@
 <?php
 namespace CDTI;
 
+/**
+ * Common Data Type Interface.
+ * @copyright (c) 2015 Dmitriy Ivan
+ */
 interface iString //good old string
 {
 	const ENCODING    = 'UTF-8';

@@ -1,6 +1,6 @@
 <?php
 /**
- * Фреймворк. Форматирование.
+ * Common Data Type Interface. Форматирование.
  * @copyright (c) 2014, Dmitriy Ivan
  */
 namespace CDTI\Objects;

@@ -1,4 +1,8 @@
 <?php
+/**
+ * Common Data Type Interface.
+ * @copyright (c) 2015 Dmitriy Ivan
+ */
 namespace CDTI\Strings;
 
 interface iCase //good old string

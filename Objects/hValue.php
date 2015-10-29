@@ -1,6 +1,6 @@
 <?php
 /**
- * Фреймворк. Объекты. Атомарник.
+ * Common Data Type Interface. Объекты. Атомарник.
  * @copyright (c) 2014, Dmitriy Ivan
  */
 namespace CDTI\Objects;

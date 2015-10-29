@@ -1,9 +1,9 @@
 <?php
 /**
- * Фреймворк.
+ * Common Data Type Interface.
  * interface has abstract type and exception... "i hate" lol.
  *
- * @copyright (c) 2013, Dmitriy Ivan
+ * @copyright (c) 2015 Dmitriy Ivan
  *
  * Возможно, среди интерфейсов можно выделить 2 группы:
  * - Описывающие какие свойства объект может иметь, и соответственно get-set'ы

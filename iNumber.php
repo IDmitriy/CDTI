@@ -1,7 +1,7 @@
 <?php
 /**
- * Фреймворк.
- * @copyright (c) 2013, Dmitriy Ivan
+ * Common Data Type Interface.
+ * @copyright (c) 2015 Dmitriy Ivan
  */
 namespace CDTI;
 

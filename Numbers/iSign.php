@@ -1,4 +1,8 @@
 <?php
+/**
+ * Common Data Type Interface.
+ * @copyright (c) 2015 Dmitriy Ivan
+ */
 namespace CDTI\Numbers;
 
 /*
@@ -9,4 +13,3 @@ interface iSign
 {
 	function setInverse();
 }
-?>

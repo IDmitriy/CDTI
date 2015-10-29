@@ -1,7 +1,7 @@
 <?php
 /**
- * Фреймворк. Структуры. Метка.
- * @copyright (c) 2013, Dmitriy Ivan
+ * Common Data Type Interface. Структуры. Метка.
+ * @copyright (c) 2015 Dmitriy Ivan
  */
 namespace CDTI\Structures;
 

@@ -1,7 +1,7 @@
 <?php
 /**
- * Фреймворк. Объекты. Вектор.
- * @copyright (c) 2013, Dmitriy Ivan
+ * Common Data Type Interface. Объекты. Вектор.
+ * @copyright (c) 2015 Dmitriy Ivan
  */
 namespace CDTI\Objects;
 

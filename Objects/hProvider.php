@@ -1,6 +1,6 @@
 <?php
 /**
- * Фреймворк. Объекты. Обертка.
+ * Common Data Type Interface. Объекты. Обертка.
  * @copyright (c) 2014, Dmitriy Ivan
  */
 namespace CDTI\Objects;
