@@ -1,14 +1,13 @@
 <?php
-/**
- * Common Data Type Interface. Даты и Время. Время.
- * @copyright (c) 2015 Dmitriy Ivan
- */
 namespace CDTI\DateTimes;
 
 /**
- * Интерфейс Времени
+ * Time interface
+ * 
+ * @package Common Data Type Interface
+ * @copyright (c) 2015 Dmitriy Ivan
  */
-interface iTime
+interface iTime extends \CDTI\iObject
 {
 	/**
 	 * Получить час

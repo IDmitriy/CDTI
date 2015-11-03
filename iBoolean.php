@@ -1,29 +1,28 @@
 <?php
-/**
- * Common Data Type Interface.
- * @copyright (c) 2015 Dmitriy Ivan
- */
 namespace CDTI;
 
 /**
- * Интерфейс Буля+
+ * Boolean interface
+ * 
+ * @package Common Data Type Interface
+ * @copyright (c) 2015 Dmitriy Ivan
  */
-interface iBoolean
+interface iBoolean extends iObject, Objects\hValue
 {
 	/**
 	 * Правда
 	 */
-	const true  = 'true';
+	const TRUE  = 'true';
 
 	/**
 	 * Ложь
 	 */
-	const false = 'false';
+	const FALSE = 'false';
 
 	/**
 	 * Неизвестность
 	 */
-	const null  = 'null';
+	const NULL  = 'null';
 
 	/*
 	function getTrue();

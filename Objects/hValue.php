@@ -1,13 +1,12 @@
 <?php
-/**
- * Common Data Type Interface. Объекты. Атомарник.
- * @copyright (c) 2014, Dmitriy Ivan
- */
 namespace CDTI\Objects;
 
 /**
- *  Интерфейс атомарных объектов
- *  @todo getValue - вероятно исключить? hValue?
+ * Value interface
+ * 
+ * @package Common Data Type Interface
+ * @copyright (c) 2015 Dmitriy Ivan
+ * @todo: getValue - possibly exclude from here? hValue?
  */
 interface hValue
 {

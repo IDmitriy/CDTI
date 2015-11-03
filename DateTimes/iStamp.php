@@ -1,14 +1,15 @@
 <?php
-/**
- * Common Data Type Interface. Даты и Время. Метка.
- * @copyright (c) 2015 Dmitriy Ivan
- */
 namespace CDTI\DateTimes;
 
 /**
- * Интерфейс Таймстампа
+ * Timestamp interface
+ * 
+ * @package Common Data Type Interface
+ * @copyright (c) 2015 Dmitriy Ivan
+ * @internal: Shares functionality of DateTime and Number
+ * @todo: to think.
  */
-interface iStamp
+interface iStamp extends \CDTI\iNumber, \CDTI\iDateTime
 {
 	public function setAbsolute();
 

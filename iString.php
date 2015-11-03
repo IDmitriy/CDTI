@@ -2,10 +2,12 @@
 namespace CDTI;
 
 /**
- * Common Data Type Interface.
+ * String interface
+ * 
+ * @package Common Data Type Interface
  * @copyright (c) 2015 Dmitriy Ivan
  */
-interface iString //good old string
+interface iString extends Objects\hVector, Objects\hValue
 {
 	const ENCODING    = 'UTF-8';
 	const SENSETIVE   = true;

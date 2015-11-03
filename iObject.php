@@ -1,65 +1,63 @@
 <?php
-/**
- * Common Data Type Interface.
- * interface has abstract type and exception... "i hate" lol.
- *
- * @copyright (c) 2015 Dmitriy Ivan
- *
- * Возможно, среди интерфейсов можно выделить 2 группы:
- * - Описывающие какие свойства объект может иметь, и соответственно get-set'ы
- *   например: hTime, hValue, hLength, hProvider, hFormat... hVector
- *
- * - Описываюшие какие действия моно совершить с объектом.
- *   например iArray, iStructure, iObject, iString,
- *
- * Типы действий:
- * - Преобразования
- * - Проверки
- * - Изменение значения (связанные с тем, какие свойства имеет?)
- *   т.е. действия подсасывают за собой свойства.
- *
- * @todo:
- * - Конфиг, основанный на массиве;
- * - Результат проверки, который сможет кидать exception? научить exception уму?
- */
 namespace CDTI;
 
 /**
- * Интерфейс базового Объекта
+ * Object interface
+ * - Check for exact class, as caller
+ * - Check for sufficient for creating instance of this class
+ * - Check for exact native type
+ * - Retrieve reflection of class
+ * - Retrieve class name
+ * 
+ * @package Common Data Type Interface
+ * @copyright (c) 2015 Dmitriy Ivan
  */
 interface iObject
 {
-	const VERSION = '1.3';
-
 	/**
-	 * Создется полная копия текущего объекта, и дальнейшая работа только с ней
+	 * Check for same class as caller
 	 *
-	 * @param var $_capture Пустая переменная для отлова значения
-	 * @return aObject Объект того же типа, что и исполнитель метода;
-	 */
-	function asNew(&$_capture = false);
-
-	/**
-	 * Является ли данный объект точным представителем вызываемого класса
-	 *
-	 * @param type $_aObject
-	 * @return bool Объект того же типа, что и исполнитель метода
-	 */
-	static function is($_aObject);
-
-	/**
-	 * is given value sufficient for creating instance of this class?
-	 * @param mixed $_mixed любое значение
+	 * @param type $_object
 	 * @return bool
-	 * @todo maybe should have method for explicitly check datatype?
 	 */
-	static function isCompatible($_mixed);
+	static function is($_object);
 
 	/**
-	 * Получить данные об объекте
-	 * @param boolean $_type
+	 * Check for sufficient for creating instance of this class
+     * 
+	 * @param mixed $_value Any value
+	 * @return bool
 	 */
-	function getClass($_type = true);
+	static function isCompatible($_value);
+    
+    /**
+     * Check for exact native type
+     * @param mixed $_value
+     * @return bool
+     */
+	static function isExact($_value);
+    
+    /**
+     * 
+     */
+    static function isInstanceExists();
 
-	function getList($_type = true);
+	/**
+     * Retrieve reflection of class
+     * 
+	 * @return \CDTI\Reflections\cClass
+     * @internal: As method called, a poll of reflection instances will be created
+	 */
+	function getClass();
+    
+    /**
+     * Retrieve class name
+     *  
+     * @return string Full name of class
+     * @internal: lightweight version of getClass
+     */
+    function getClassName();
+
+    
+    
 }

@@ -1,13 +1,13 @@
 <?php
-namespace CDTI\Arrays;
+namespace CDTI\Numbers;
 
 /**
- * Tree interface
+ * Sign interface
  * 
  * @package Common Data Type Interface
  * @copyright (c) 2015 Dmitriy Ivan
  */
-interface iTree  
+interface hSign
 {
-    
+	function setInverse();
 }

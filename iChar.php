@@ -1,15 +1,13 @@
 <?php
-/**
- * Common Data Type Interface.
- * @copyright (c) 2015 Dmitriy Ivan
- */
 namespace CDTI;
 
 /**
- * Интерфейс Символа
- * @package  theFramework
+ * Char interface
+ * 
+ * @package Common Data Type Interface
+ * @copyright (c) 2015 Dmitriy Ivan
  */
-interface iChar 
+interface iChar extends iObject, Objects\hValue
 {	
 	/**
 	 * Возврат кода Символа

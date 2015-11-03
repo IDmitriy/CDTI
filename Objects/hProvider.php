@@ -1,12 +1,12 @@
 <?php
-/**
- * Common Data Type Interface. Объекты. Обертка.
- * @copyright (c) 2014, Dmitriy Ivan
- */
 namespace CDTI\Objects;
 
 /**
- * Интерфейс обертки для другого объекта
+ * Whraps some external provider
+ * 
+ * @package Common Data Type Interface
+ * @copyright (c) 2015 Dmitriy Ivan
+ * @internal: This interface should not be extended by another interfaces
  */
 interface hProvider
 {

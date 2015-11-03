@@ -1,13 +1,13 @@
 <?php
-namespace CDTI\Arrays;
+namespace CDTI\Reflections;
 
 /**
- * Tree interface
+ * Class interface
  * 
  * @package Common Data Type Interface
  * @copyright (c) 2015 Dmitriy Ivan
  */
-interface iTree  
+interface iClass
 {
     
 }

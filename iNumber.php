@@ -1,14 +1,14 @@
 <?php
-/**
- * Common Data Type Interface.
- * @copyright (c) 2015 Dmitriy Ivan
- */
 namespace CDTI;
 
 /**
- * Интерфейс Числа.
+ * Number interface
+ * 
+ * @package Common Data Type Interface
+ * @copyright (c) 2015 Dmitriy Ivan
+ * @internal: Numers include floating point and real numbers
  */
-interface iNumber //float or int
+interface iNumber extends iObject, Objects\hValue
 {
 	function isPositive($_number = null);
 	
